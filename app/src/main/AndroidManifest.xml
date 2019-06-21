@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.franklinzquantum.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_01"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_01"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <service
+            android:name=".MyService_music"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".class1"></activity>
+        <activity android:name=".class2"></activity>
+        <activity android:name=".class3"></activity>
+        <activity android:name=".class4"></activity>
+        <activity android:name=".class5"></activity>
+        <activity android:name=".class6"></activity>
+        <activity android:name=".class7"></activity>
+        <activity android:name=".class8"></activity>
+        <activity android:name=".class9"></activity>
+        <activity android:name=".class10"></activity>
+        <activity android:name=".class11"></activity>
+        <activity android:name=".class12"></activity>
+        <activity android:name=".class13"></activity>
+        <activity android:name=".class14"></activity>
+        <activity android:name=".class15"></activity>
+        <activity android:name=".词表"></activity>
+        <activity android:name=".联系我们"></activity>
+        <activity android:name=".选择书籍"></activity>
+        <activity android:name=".背单词"></activity>
+        <activity android:name=".单词查询"></activity>
+        <activity android:name=".俄语咨询"></activity>
+        <activity android:name=".查词显示"></activity>
+        <activity android:name=".Notknow"></activity>
+        <activity android:name=".setting"></activity>
+        <activity android:name=".music"></activity>
+        <activity android:name=".Booktest"></activity>
+        <activity android:name=".登录界面"></activity>
+        <activity android:name=".read_book"></activity>
+        <activity android:name=".课文列表"></activity>
+
+    </application>
+
+</manifest>

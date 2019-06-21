@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Ура! 俄语学习助手 v 0.3</string>
+    <string name="string1">>大学俄语第一册1~10课单词汇总</string>
+    <string name="string2">Урок 1 第一课</string>
+    <string name="string3">夜间模式</string>
+    <string name="string4">Урок 1 第一课</string>
+
+    <string name="string5">夜间模式</string>
+    <string name="string6">Урок 2 第二课</string>
+    <string name="string7">夜间模式</string>
+    <string name="stringc3">Урок 3 第三课</string>
+    <string name="stringc4">Урок 4 第四课</string>
+    <string name="stringc5">Урок 5 第五课</string>
+    <string name="stringc6">Урок 6 第六课</string>
+    <string name="stringc7">Урок 7 第七课</string>
+    <string name="stringc8">Урок 8 第八课</string>
+    <string name="stringc9">Урок 9 第九课</string>
+    <string name="stringc10">Урок 10 第十课</string>
+
+    <string name="word2">Кто 这是/n Кот 猫/n Он 他，它/n Она 她，它/n Оно 它/n Но 但是/n Окно 窗户/n У окна 在窗户旁/n И 和/n Пока 暂时;【语气词】再见;当......的时候/n Утка 鸭子/n Касса 收银台/n Капуста 白菜/n Комната 房间/n Нос 鼻子/n Опасно 危险/n Сок 果汁/n Суп 汤/n Сон 梦/n Мост 桥/n Сто 一百/n Соус 调味汁/n Уксус 醋/n Сын 儿子/n Космос 宇宙/n Так 这样/n Как 如何，怎样/n Ананас 菠萝/n</string>
+    <string name="word3">Урок 10 第十课</string>
+    <string name="word4">Урок 10 第十课</string>
+    <string name="word5">Урок 10 第十课</string>
+    <string name="word6">Урок 10 第十课</string>
+    <string name="word7">Урок 10 第十课</string>
+    <string name="word8">Урок 10 第十课</string>
+    <string name="word9">Урок 10 第十课</string>
+    <string name="word10">Урок 10 第十课</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string-array name="countries">
+        <item>Bahrain</item>
+        <item>Bangladesh</item>
+        <item>Belarus</item>
+        <item>Belize</item>
+        <item>Brazil</item>
+        <item>Cameroon</item>
+        <item>Japan</item>
+        <item>Hongkong</item>
+        <item>Greece</item>
+        <item>Germany</item>
+        <item>France</item>
+        <item>Djibouti</item>
+        <item>Denmark</item>
+        <item>Canada</item>
+    </string-array>
+
+
+
+</resources>
