@@ -9,6 +9,7 @@ import java.io.FileOutputStream;
 import java.io.InputStreamReader;
 
 //spilt实现切割
+//注意同时添加save和read
 public class 通用读取 {
     public  static boolean save (int word,String name){
 
@@ -23,6 +24,8 @@ public class 通用读取 {
             case "login": file = new File("/data/data/com.example.franklinzquantum.myapplication/login.txt");
                 break;
             case "textSize": file = new File("/data/data/com.example.franklinzquantum.myapplication/textSize.txt");
+                break;
+            case "theme": file = new File("/data/data/com.example.franklinzquantum.myapplication/theme.txt");
                 break;
         }
 
@@ -55,6 +58,8 @@ public class 通用读取 {
                 case "login": file = new File("/data/data/com.example.franklinzquantum.myapplication/login.txt");
                     break;
                 case "textSize": file = new File("/data/data/com.example.franklinzquantum.myapplication/textSize.txt");
+                    break;
+                case "theme": file = new File("/data/data/com.example.franklinzquantum.myapplication/theme.txt");
                     break;
             }
            // file = new File("/data/data/com.example.franklinzquantum.myapplication/save.txt");

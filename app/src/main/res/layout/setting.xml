@@ -6,6 +6,18 @@
     android:layout_height="match_parent">
 
 
+    <Spinner
+        android:id="@+id/spinner_UI"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="8dp"
+        android:hint="6000考研俄语高频词汇"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button17" />
+
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
@@ -20,11 +32,11 @@
         android:id="@+id/button26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="51dp"
-        android:layout_marginEnd="151dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="23dp"
         android:text="重置"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/textView_setTextsize"
+        app:layout_constraintStart_toEndOf="@+id/textView37" />
 
     <Button
         android:id="@+id/button17"
@@ -52,10 +64,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="123dp"
         android:text="设置阅读器字体大小"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button26" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView_setTextsize"
@@ -66,4 +78,37 @@
         android:text="当前大小：14"
         app:layout_constraintBottom_toTopOf="@+id/editText5"
         app:layout_constraintStart_toStartOf="@+id/button26" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="请选择背景主题"
+        app:layout_constraintBottom_toTopOf="@+id/spinner_UI"
+        app:layout_constraintStart_toStartOf="@+id/editText5"
+        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+    <Button
+        android:id="@+id/button_UI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="更换主题"
+        app:layout_constraintEnd_toEndOf="@+id/button17"
+        app:layout_constraintStart_toStartOf="@+id/button17"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_UI" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="27dp"
+        android:text="设置全局背景"
+        app:layout_constraintStart_toStartOf="@+id/spinner_UI"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_UI" />
+
 </android.support.constraint.ConstraintLayout>

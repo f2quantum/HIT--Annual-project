@@ -24,11 +24,12 @@ public class 词表 extends AppCompatActivity {
     private  Button button_night1;
     private  Button  button_lesson2;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        changeTheme();
 
         button_lesson1=(Button)findViewById(R.id.button1);
 
@@ -197,6 +198,23 @@ public class 词表 extends AppCompatActivity {
     }
 
 
+
+    public void changeTheme(){
+        int state_of_theme=通用读取.read("theme");
+        switch ( state_of_theme){
+            case 0:
+                break;
+            case 1:
+
+                getWindow().setBackgroundDrawableResource(R.mipmap.background1);
+                break;
+            case 2:
+
+                getWindow().setBackgroundDrawableResource(R.mipmap.background2);
+                break;
+
+        }
+    }
 
 
 }

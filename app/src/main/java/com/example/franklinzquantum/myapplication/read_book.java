@@ -61,9 +61,9 @@ public class read_book extends Activity {
            // String name = txtFilePath.substring(index+1, txtFilePath.length());//截取文本名字
            // setTitle(name);//设置标题为文本名字
             try {
-                InputStream fr = getAssets().open("ddd.txt");
+                InputStream fr = getAssets().open("GCDXY.txt");
                 //FileInputStream fr = new FileInputStream(txtFilePath);//文件输出流
-                BufferedReader br = new BufferedReader(new InputStreamReader(fr, "utf-8"));//缓冲读取文件数据
+                BufferedReader br = new BufferedReader(new InputStreamReader(fr, "UTF-8"));//缓冲读取文件数据
                 String line = "" ;//记录每一行数据
                 String content = "" ;
                 while((line = br.readLine()) != null){//如果还有下一行数据
@@ -120,7 +120,10 @@ public class read_book extends Activity {
     public boolean onKeyDown(  int keyCode, KeyEvent event) {//直接跳回
         if ((keyCode == KEYCODE_BACK) ) {
 
-            player.stop();
+            if(!(player==null)){
+                player.stop();
+            }
+
             finish();
             return true;
         }

@@ -2,6 +2,8 @@ package com.example.franklinzquantum.myapplication;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -30,6 +32,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.new_main);
+
+        changeTheme();
+        //加载主题界面
+
+
+
+
         Button enterList=(Button)findViewById(R.id.button10);
         Button wordLookUp=(Button)findViewById(R.id.button11);
         Button russianNews=(Button)findViewById(R.id.button12);
@@ -37,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         Button contratUs=(Button)findViewById(R.id.button14);
         Switch nightMode=(Switch)findViewById(R.id.switch1);
         Button setting=(Button)findViewById(R.id.button25);
-        Button button_music=(Button)findViewById(R.id.button_music);//俄语歌曲
+        Button button_workshop=(Button)findViewById(R.id.button_workshop);//俄语歌曲
         Button my_book=(Button)findViewById(R.id.my_book);//俄语歌曲
        final Button signin=(Button)findViewById(R.id.SignIn);//登录
        final TextView login_or_not=(TextView)findViewById(R.id.textView30);
@@ -50,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         nightMode.setOnClickListener(new myClickListener());//
         reciteWord.setOnClickListener(new myClickListener());//
         setting.setOnClickListener(new myClickListener());//
-        button_music.setOnClickListener(new myClickListener());//
+        button_workshop.setOnClickListener(new myClickListener());//
         my_book.setOnClickListener(new myClickListener());//
         signin.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
@@ -84,6 +93,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
     }
     private    class myClickListener implements OnClickListener{
         @Override
@@ -108,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.button13://背单词
                     Intent intent_recite=new Intent(MainActivity.this,背单词.class);
-                    Toast.makeText(MainActivity.this,"功能正在开发中，敬请期待 ",Toast.LENGTH_SHORT).show();
+
                     startActivity( intent_recite);
 
                     break;
@@ -141,9 +152,9 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent_setting);
 
                     break;
-                case R.id.button_music:// 音乐
+                case R.id.button_workshop:// 创意工坊
                     //Toast.makeText(MainActivity.this,"联系我们 ",Toast.LENGTH_SHORT).show();
-                    Intent intent_music=new Intent(MainActivity.this,music.class);
+                    Intent intent_music=new Intent(MainActivity.this,Workshop.class);
                     startActivity(intent_music);
 
                     break;
@@ -169,10 +180,29 @@ public class MainActivity extends AppCompatActivity {
         if ((keyCode == KEYCODE_BACK) ) {
             android.os.Process.killProcess(android.os.Process.myPid());
             System.exit(0);
+            finish();
             return true;
         }
         return super.onKeyDown(keyCode, event);
     }
+
+     public void changeTheme(){
+        int state_of_theme=通用读取.read("theme");
+        switch ( state_of_theme){
+            case 0:
+                break;
+            case 1:
+
+                getWindow().setBackgroundDrawableResource(R.mipmap.background1);
+                break;
+            case 2:
+
+                getWindow().setBackgroundDrawableResource(R.mipmap.background2);
+                break;
+
+        }
+    }
+
 
 }
 

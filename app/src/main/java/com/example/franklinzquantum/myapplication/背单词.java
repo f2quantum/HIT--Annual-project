@@ -27,7 +27,7 @@ public class 背单词 extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recite);
-
+        changeTheme();
         final Button A=(Button)findViewById(R.id.button21);//太简单
         final Button B=(Button)findViewById(R.id.button19);//认识
         final Button C=(Button)findViewById(R.id.button20);//不认识
@@ -130,5 +130,20 @@ public class 背单词 extends AppCompatActivity {
         });//
 
     }
+    public void changeTheme(){
+        int state_of_theme=通用读取.read("theme");
+        switch ( state_of_theme){
+            case 0:
+                break;
+            case 1:
 
+                getWindow().setBackgroundDrawableResource(R.mipmap.background1);
+                break;
+            case 2:
+
+                getWindow().setBackgroundDrawableResource(R.mipmap.background2);
+                break;
+
+        }
+    }
 }

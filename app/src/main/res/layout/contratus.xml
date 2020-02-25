@@ -92,11 +92,10 @@
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="1dp"
         android:text="单身！单身！单身！"
         android:textColor="#ff0000"
         app:layout_constraintBottom_toTopOf="@+id/textView12"
-        app:layout_constraintStart_toStartOf="@+id/textView12" />
+        app:layout_constraintStart_toStartOf="@+id/textView18" />
 
     <TextView
         android:id="@+id/textView18"
@@ -110,10 +109,12 @@
     <TextView
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
         android:text="帅！  帅！  帅！"
         app:layout_constraintBottom_toTopOf="@+id/textView13"
-        app:layout_constraintStart_toStartOf="@+id/textView13" />
+        app:layout_constraintStart_toStartOf="@+id/textView12" />
 
     <TextView
         android:id="@+id/textView20"
@@ -143,6 +144,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView26"
         app:srcCompat="@mipmap/hit01" />
+
+    <Button
+        android:id="@+id/button_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="37dp"
+        android:text="神秘按钮"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/button16"
+        app:layout_constraintTop_toBottomOf="@+id/button16" />
 
 
 </android.support.constraint.ConstraintLayout>

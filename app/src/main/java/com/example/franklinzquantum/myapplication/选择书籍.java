@@ -26,6 +26,8 @@ public class 选择书籍 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.bookchoose);
 
+        changeTheme();
+
         Intent it = getIntent();
         times= it.getIntExtra("choose",1);
 
@@ -96,7 +98,22 @@ public class 选择书籍 extends AppCompatActivity {
         }
     }
 
+    public void changeTheme(){
+        int state_of_theme=通用读取.read("theme");
+        switch ( state_of_theme){
+            case 0:
+                break;
+            case 1:
 
+                getWindow().setBackgroundDrawableResource(R.mipmap.background1);
+                break;
+            case 2:
+
+                getWindow().setBackgroundDrawableResource(R.mipmap.background2);
+                break;
+
+        }
+    }
 
 
 

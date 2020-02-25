@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.res.AssetFileDescriptor;
 import android.content.res.AssetManager;
+import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -40,6 +41,7 @@ public class 联系我们 extends AppCompatActivity {
         final Button grilfriend=(Button)findViewById(R.id.button16);
         final ImageView yyc=(ImageView)findViewById(R.id.imageView2);
         final ImageView hit=(ImageView)findViewById(R.id.imageView);
+        final Button  一个神秘按钮 =(Button)findViewById(R.id.button_x);//妓院强者
         final TextView text1=(TextView)findViewById(R.id.textView18);//妓院强者
         final TextView text2=(TextView)findViewById(R.id.textView19);//帅
         final TextView text3=(TextView)findViewById(R.id.textView20);//本项目
@@ -103,14 +105,16 @@ public class 联系我们 extends AppCompatActivity {
                     hit.setImageDrawable(getResources().getDrawable(R.mipmap.cccp));
 
                     text1.setText("第三十八近卫步兵师政委");
-                    text2.setText("祖国处处埋忠骨--尼古拉·翌辰夫斯基");
+                    text2.setText("We can do it !--尼古拉·翌辰夫斯基");
                     text3.setText("余古拉·翌辰夫斯基同志！");
-                    text4.setText("   ——★CCCP★——");
-                    text5.setText("   ——★CCCP★——");
-                    text6.setText("Ура！Ура！Ура！");
+                    text4.setText(" Союз Советских ");
+                    text5.setText("If Lenin could see us now");
+                    text6.setText("Социалистических Республик");
+                    text6.setTextColor(Color.parseColor("#FF0000"));
                     grilfriend.setText("暂停播放");
+                    一个神秘按钮.setVisibility(View.VISIBLE);
 
-                    Toast.makeText(联系我们.this,"政委羿辰夫斯基俄讯QQ号已复制到您的剪切板 "+x,Toast.LENGTH_SHORT).show();
+                    Toast.makeText(联系我们.this,"政委羿辰夫斯基QQ号已复制到您的剪切板 "+x,Toast.LENGTH_SHORT).show();
 
 
                 }

@@ -29,7 +29,7 @@ public class 单词查询 extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.wordlookup);
-
+        changeTheme();
         String[] value = new String[]
                 { "大学俄语东方","6000考研俄语高频词汇" };
 
@@ -91,7 +91,22 @@ public class 单词查询 extends AppCompatActivity {
 
 
     }
+    public void changeTheme(){
+        int state_of_theme=通用读取.read("theme");
+        switch ( state_of_theme){
+            case 0:
+                break;
+            case 1:
 
+                getWindow().setBackgroundDrawableResource(R.mipmap.background1);
+                break;
+            case 2:
+
+                getWindow().setBackgroundDrawableResource(R.mipmap.background2);
+                break;
+
+        }
+    }
 
 
 

@@ -27,7 +27,7 @@ public class Notknow extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.notknow);
-
+        changeTheme();
 
         final String [][]data=背单词词库.load();
         Intent it = getIntent();
@@ -91,7 +91,22 @@ public class Notknow extends AppCompatActivity {
 
 
 
+    public void changeTheme(){
+        int state_of_theme=通用读取.read("theme");
+        switch ( state_of_theme){
+            case 0:
+                break;
+            case 1:
 
+                getWindow().setBackgroundDrawableResource(R.mipmap.background1);
+                break;
+            case 2:
+
+                getWindow().setBackgroundDrawableResource(R.mipmap.background2);
+                break;
+
+        }
+    }
 
 
 

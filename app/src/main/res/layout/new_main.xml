@@ -2,8 +2,10 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:layout_editor_absoluteY="81dp">
 
     <TextView
@@ -144,11 +146,11 @@
         app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
     <Button
-        android:id="@+id/button_music"
+        android:id="@+id/button_workshop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="42dp"
-        android:text="俄语music"
+        android:text="创意工坊"
         app:layout_constraintEnd_toEndOf="@+id/my_book"
         app:layout_constraintTop_toBottomOf="@+id/my_book" />
 

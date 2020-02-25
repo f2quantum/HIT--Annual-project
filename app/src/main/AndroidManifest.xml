@@ -56,6 +56,11 @@
         <activity android:name=".登录界面"></activity>
         <activity android:name=".read_book"></activity>
         <activity android:name=".课文列表"></activity>
+        <activity android:name=".Workshop"></activity>
+        <activity android:name=".forum"></activity>
+        <activity android:name=".gamelist"></activity>
+        <activity android:name=".upload"></activity>
+
 
     </application>
 
